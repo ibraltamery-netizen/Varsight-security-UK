@@ -1,1 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Varsight Security | Professional Security Services Across Yorkshire</title>
+
+<meta name="description" content="Varsight Security provides professional retail security, loss prevention, event security, residential security, construction site security and infrastructure security across West Yorkshire and surrounding areas.">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+line-height:1.6;
+}
+
+header{
+background:#000;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+border-bottom:2px solid #d4af37;
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+height:85px;
+}
+
+.logo h2{
+color:#d4af37;
+font-size:1.4rem;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
+url('security.jpg');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.hero h2{
+font-size:2rem;
+margin-bottom:20px;
+}
+
+.tagline{
+font-size:1.3rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#d4af37;
+color:black;
+padding:15px 30px;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+.btn:hover{
+background:white;
+}
+
+.contact-hero{
+margin-top:25px;
+font-size:1.1rem;
+}
+
+section{
+padding:90px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+color:#d4af37;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#161616;
+padding:30px;
+border-left:5px solid #d4af37;
+border-radius:10px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.why ul{
+list-style:none;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.why li{
+background:#161616;
+padding:20px;
+border-radius:10px;
+}
+
+.industries{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.industry{
+background:#161616;
+padding:20px;
+text-align:center;
+border-radius:8px;
+}
+
+.about{
+background:#111;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact-box{
+background:#161616;
+padding:40px;
+border-radius:10px;
+max-width:900px;
+margin:auto;
+}
+
+.contact-box h3{
+color:#d4af37;
+margin-bottom:20px;
+}
+
+input,
+textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:5px;
+}
+
+button{
+background:#d4af37;
+color:black;
+padding:15px 30px;
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:white;
+}
+
+footer{
+background:#000;
+padding:40px;
+text-align:center;
+border-top:2px solid #d4af37;
+}
+
+footer h3{
+color:#d4af37;
+margin-bottom:10px;
+}
+
+footer img{
+height:90px;
+margin-bottom:20px;
+}
+
+.call-button{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#d4af37;
+color:black;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 10px rgba(0,0,0,.4);
+}
+
+a{
+color:#d4af37;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.hero h2{
+font-size:1.4rem;
+}
+
+nav ul{
+display:none;
+}
+
+.logo img{
+height:70px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav-container">
+
+<div class="logo">
+<img src="logo.png" alt="Varsight Security Logo">
+<h2>VARSIGHT SECURITY</h2>
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#industries">Industries</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Professional Security Services Across Yorkshire</h1>
+
+<h2>Retail Security • Loss Prevention • Event Security • Construction Site Protection</h2>
+
+<p class="tagline">
+Trusted SIA-Licenced Security Professionals Protecting Businesses, Property and People 24/7
+</p>
+
+<a href="#contact" class="btn">REQUEST A FREE CONSULTATION</a>
+
+<div class="contact-hero">
+
+📞 <a href="tel:+447775338006">+44 7775 338006</a><br>
+
+📞 <a href="tel:+447342315040">+44 7342 315040</a><br>
+
+✉ <a href="mailto:contact.varsightsecurity@gmail.com">contact.varsightsecurity@gmail.com</a><br>
+
+📍 West Yorkshire, United Kingdom
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">Our Security Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Retail Security & Loss Prevention</h3>
+<p>Reduce shrinkage, deter theft and protect profits through highly visible security officers.</p>
+</div>
+
+<div class="card">
+<h3>Event Security</h3>
+<p>Professional security for festivals, sports events, concerts and corporate functions.</p>
+</div>
+
+<div class="card">
+<h3>Construction Site Security</h3>
+<p>Protecting sites, equipment, materials and personnel from theft and vandalism.</p>
+</div>
+
+<div class="card">
+<h3>Residential Security</h3>
+<p>Security solutions for residential developments, apartment blocks and private communities.</p>
+</div>
+
+<div class="card">
+<h3>Student Accommodation Security</h3>
+<p>Patrols, concierge services and access control for student residences.</p>
+</div>
+
+<div class="card">
+<h3>Infrastructure Security</h3>
+<p>Security support for highways, motorway projects and critical infrastructure.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<div class="container">
+
+<h2 class="section-title">Why Choose Varsight Security?</h2>
+
+<div style="text-align:center;margin-bottom:30px;font-size:1.2rem;">
+✔ SIA Trained Officers | ✔ 24/7 Coverage | ✔ Rapid Response | ✔ Professional Service
+</div>
+
+<ul>
+
+<li>Professional SIA Trained Officers</li>
+<li>Retail Loss Prevention Specialists</li>
+<li>Visible Theft Deterrence</li>
+<li>Rapid Incident Response</li>
+<li>Comprehensive Reporting</li>
+<li>Flexible Security Solutions</li>
+<li>24/7 Coverage</li>
+<li>West Yorkshire Coverage</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="industries">
+
+<div class="container">
+
+<h2 class="section-title">Industries We Protect</h2>
+
+<div class="industries">
+
+<div class="industry">Supermarkets</div>
+<div class="industry">Retail Chains</div>
+<div class="industry">Independent Stores</div>
+<div class="industry">Sports Venues</div>
+<div class="industry">Concerts & Festivals</div>
+<div class="industry">Student Accommodation</div>
+<div class="industry">Residential Developments</div>
+<div class="industry">Construction Projects</div>
+<div class="industry">Infrastructure Projects</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<div class="container">
+
+<h2 class="section-title">About Varsight Security</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;font-size:1.1rem;">
+
+Varsight Security provides dependable security services throughout West Yorkshire and surrounding areas. We specialise in retail security and loss prevention while delivering professional protection for events, residential developments, student accommodation, construction sites and infrastructure projects.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Areas We Cover</h2>
+
+<div class="cards">
+
+<div class="card">Leeds</div>
+<div class="card">Bradford</div>
+<div class="card">Wakefield</div>
+<div class="card">Huddersfield</div>
+<div class="card">Halifax</div>
+<div class="card">West Yorkshire</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact-box">
+
+<h3>Need Professional Security Services?</h3>
+
+<p>Contact us today for a free consultation.</p>
+
+<br>
+
+<p><strong>📞 +44 7775 338006</strong></p>
+<p><strong>📞 +44 7342 315040</strong></p>
+
+<p><strong>✉ contact.varsightsecurity@gmail.com</strong></p>
+
+<p><strong>📍 West Yorkshire, United Kingdom</strong></p>
+
+<br>
+
+<form action="https://formsubmit.co/contact.varsightsecurity@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="tel" name="phone" placeholder="Phone Number">
+
+<textarea name="message" placeholder="Tell us about your security requirements" required></textarea>
+
+<button type="submit">Request Consultation</button>
+
+</form>
+
+<br><br>
+
+<iframe
+src="https://www.google.com/maps?q=West+Yorkshire,+UK&output=embed"
+width="100%"
+height="350"
+style="border:0;border-radius:10px;"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<img src="logo.png" alt="Varsight Security Logo">
+
+<h3>VARSIGHT SECURITY</h3>
+
+<p>Protecting People, Property & Profits</p>
+
+<br>
+
+<p>Retail Security | Event Security | Construction Site Security</p>
+
+<br>
+
+<p>📞 +44 7775 338006</p>
+
+<p>📞 +44 7342 315040</p>
+
+<p>✉ contact.varsightsecurity@gmail.com</p>
+
+<p>📍 West Yorkshire, United Kingdom</p>
+
+<br>
+
+<p>Available 24 Hours A Day, 7 Days A Week</p>
+
+<br>
+
+<p>© 2026 Varsight Security. All Rights Reserved.</p>
+
+</footer>
+
+<a href="tel:+447775338006" class="call-button">📞 Call Now</a>
+
+</body>
+</html>
